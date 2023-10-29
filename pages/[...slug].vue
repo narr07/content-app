@@ -1,6 +1,8 @@
 <template>
   <main>
-    <ContentDoc />
+    <Ucontainer>
+      <ContentDoc />
+    </Ucontainer>
   </main>
 </template>
 <script setup>

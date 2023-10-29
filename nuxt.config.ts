@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     description: "Welcome to my awesome site!",
     defaultLocale: "id",
   },
+  content: {
+    documentDriven: true
+  }
 });
