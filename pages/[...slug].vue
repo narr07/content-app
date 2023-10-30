@@ -17,7 +17,7 @@
     twitterTitle: page.title,
   });
   defineOgImage({
-    component: "Example",
+    component: "OgPage",
     title: page.title,
     description: page.description,
   });
