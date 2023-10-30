@@ -9,16 +9,61 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@twicpics/components/nuxt3",
+    '@hypernym/nuxt-anime',
+    '@nuxtjs/fontaine',
     "@vueuse/nuxt",
   ],
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000/",
-    name: "Test Website",
-    description: "Welcome to my awesome site!",
+    name: "Permadi",
+    description: "Website Personal Dinar Permadi Yusup, Guru SD Programmer, dan Desainer Grafis ",
     defaultLocale: "id",
   },
   content: {
     documentDriven: true,
+    markdown: {
+      anchorLinks: false,
+    },
+    highlight: {
+      theme: {
+        default: "one-dark-pro",
+        // dark: "github-dark",
+      },
+      preload: [
+        "json",
+        "js",
+        "ts",
+        "html",
+        "css",
+        "vue",
+        "diff",
+        "shell",
+        "markdown",
+        "yaml",
+        "bash",
+        "py",
+        "c",
+        "cpp",
+        "php",
+      ],
+    },
+  },
+  anime: {
+    composables: true,
+  },
+  fontMetrics: {
+    fonts: [
+      {
+        family: "Rubik",
+        fallbacks: ["Rubik"],
+        fallbackName: "Rubik",
+      },
+      {
+        family: "Schibsted Grotesk",
+        fallbacks: ["Schibsted Grotesk"],
+        fallbackName: "Schibsted Grotesk",
+      },
+    ],
   },
   twicpics: {
     domain: `https://permadi.twic.pics/`,
