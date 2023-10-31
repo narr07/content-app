@@ -9,15 +9,19 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@twicpics/components/nuxt3",
-    '@hypernym/nuxt-anime',
-    '@nuxtjs/fontaine',
+    "@hypernym/nuxt-anime",
+    "@nuxtjs/fontaine",
     "@vueuse/nuxt",
   ],
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000/",
     name: "Permadi",
-    description: "Website Personal Dinar Permadi Yusup, Guru SD Programmer, dan Desainer Grafis ",
+    description:
+      "Website Personal Dinar Permadi Yusup, Guru SD Programmer, dan Desainer Grafis ",
     defaultLocale: "id",
+  },
+  ui: {
+    icons: ["ph", "skill-icons"],
   },
   content: {
     documentDriven: true,
